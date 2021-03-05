@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ShoppingCartLib\**" />
+    <Compile Remove="ShoppingCartUnitTest\**" />
+    <EmbeddedResource Remove="ShoppingCartLib\**" />
+    <EmbeddedResource Remove="ShoppingCartUnitTest\**" />
+    <None Remove="ShoppingCartLib\**" />
+    <None Remove="ShoppingCartUnitTest\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="ShoppingCartLib\ShoppingCartLib.csproj" />
+  </ItemGroup>
+
+</Project>
